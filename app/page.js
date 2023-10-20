@@ -8,13 +8,13 @@ export default function Home() {
 
   useEffect(()=>{
     //redirect
-    const setTimeoutLoader = () => setTimeout(()=>{
-      setLoader(!loader)
+    const setTimeoutLoader = setTimeout(()=>{
+      setLoader(!loader);
+     window.location.href = "https://facebook.com"
     }, 5000);
 
-    return ()=>{
-      setTimeoutLoader();
-      redirect('https://facebook.com', 'replace'); 
+    return ()=>{ 
+      clearTimeout(setTimeoutLoader);
       }
   },[])
   return (
